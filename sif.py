@@ -84,6 +84,24 @@ melon = 103
 fence_gate = 107
 glowing_obsidian = 246
 nether_reactor_core = 247
+
+def floop():
+	mc = Minecraft.create("127.0.0.1", 4711)
+	for X in range(0, 1):
+		mc.postToChat("SPLASH SPLASH")
+		
+mc = Minecraft.create("127.0.0.1", 4711)
+mc.player.setPos(-80, 0, -88)
+def wloop():
+	mc = Minecraft.create("127.0.0.1", 4711)
+	Y = 1
+	while Y == 1:
+		mc.player.setPos(-80, 0, -88)
+		x, y, z = mc.player.getPos()  
+		mc.player.setPos(x, y, z)
+		mc.setBlocks(x-75, y-12, z-25, x+75, y, z+25, water)
+		mc.player.setPos(-81.1, 8, -105.3)
+		break
 def init(): 
     mc = Minecraft.create("127.0.0.1", 4711)
     x, y, z = mc.player.getPos()  
@@ -95,12 +113,7 @@ def main():
 	x, y, z = mc.player.getPos()  
 	mc.player.setPos(x, y, z)
 	mc.setBlocks(x-128, y, z-256, x+256, y+256, z+256, air)
-	
-	mc.player.setPos(-80, 0, -88)
-	x, y, z = mc.player.getPos()  
-	mc.player.setPos(x, y, z)
-	mc.setBlocks(x-75, y-12, z-25, x+75, y, z+25, water_flowing)
-	
+
 	mc.player.setPos(-81.1, 0, -92.3)
 	x, y, z = mc.player.getPos()  
 	mc.player.setPos(x, y, z)
@@ -115,6 +128,353 @@ def main():
 	x, y, z = mc.player.getPos()  
 	mc.player.setPos(x, y, z)
 	mc.setBlocks(x-16, y, z, x+18, y, z+9, orange_wool)
+
+	#Other side
+	mc.player.setPos(-82.1, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x-16, y, z, x+18, y, z, orange_wool)
+	
+	mc.player.setPos(-66, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-67, 3, -93.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+	
+	mc.player.setPos(-68, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-69, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-70, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-71, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-72, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-73, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-74, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-75, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-76, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-77, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-78, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-79, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-80, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-81, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-82, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-83, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-84, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-85, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-86, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-87, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-88, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-89, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-90, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-91, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-92, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-93, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-94, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+	
+	mc.player.setPos(-95, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+	
+	mc.player.setPos(-96, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-97, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-98, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-99, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y+1, z, orange_wool)
+	
+	#Layer 2 Windows
+	mc.player.setPos(-66, 4, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-67, 3, -93.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+	
+	mc.player.setPos(-68, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-69, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-70, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-71, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-72, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-73, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-74, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-75, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-76, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-77, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-78, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-79, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-80, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-81, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-82, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-83, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-84, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-85, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-86, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-87, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-88, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-89, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-90, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-91, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-92, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-93, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-94, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+	
+	mc.player.setPos(-95, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+	
+	mc.player.setPos(-96, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-97, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, orange_wool)
+
+	mc.player.setPos(-98, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y, z, glass)
+
+	mc.player.setPos(-99, 3, -84.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x, y, z, x, y+1, z, orange_wool)
 	
 	#Bottom right deck
 	mc.player.setPos(-99, 2, -93.3)
@@ -350,7 +710,12 @@ def main():
 	mc.player.setPos(-72, 9, -93.3)
 	x, y, z = mc.player.getPos()  
 	mc.player.setPos(x, y, z)
-	mc.setBlocks(x-20, y, z, x, y+1, z, air)
+	mc.setBlocks(x-20, y, z, x, y, z, fence)
+
+	mc.player.setPos(-72, 10, -93.3)
+	x, y, z = mc.player.getPos()  
+	mc.player.setPos(x, y, z)
+	mc.setBlocks(x-20, y, z, x, y, z, air)
 
 	mc.player.setPos(-74, 9, -93.3)
 	x, y, z = mc.player.getPos()  
@@ -497,6 +862,8 @@ def main():
 
 	
 main()
+floop()
+wloop()
 
 """
 AIR                   0
@@ -572,3 +939,4 @@ FENCE GATE          107
 GLOWING OBSIDIAN    246
 NETHER REACTOR CORE 247
 """
+
